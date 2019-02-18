@@ -32,11 +32,8 @@ class Movie:
 		self.rating= random_movie[6]
 	def __str__(self):
 		return '{} | {}'.format(self.title, self.rating)
-	# 	return str(self.number)
-        # if self.value > 1:
-        #     return str(self.value) + " Dollars"
-        # else:
-        #     return str(self.value) + " Dollar"
-if __name__ == "__main__":
+
+
+# if __name__ == "__main__":
 	# print(Movie())
 	# print(total_number)

@@ -5,19 +5,15 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return '<h1>'+total_number+' movies recorded.</h1>'
+    return '<h1>'+str(total_number)+' movies recorded.</h1>'
 
-
-# @app.route('/')
-# def home():
-#     return 'Welcome to the banking application!'
-#
-# @app.route('/bank/<name>')
-# def bankname(name):
-#     bank_name= Bank(name,Dollar)
-#     return 'Welcome to '+ bank_name.name +'!'
-#
-
+@app.route('/movies/ratings/')
+def detail():
+    list_movie=''
+    for i in range(5):
+        detail=Movie()
+        list_movie= list_movie+ detail.title+' | '+detail.rating+'<br>'
+    return list_movie
 
 
 if __name__ == '__main__':
