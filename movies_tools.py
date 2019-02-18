@@ -9,12 +9,8 @@ with open("movies_clean.csv", "r") as f:
 		total.append(i)
 	list = []
 	for i in range(len(total)):
-		one=[]
 		title = total[i][0]
-		rating = total[i][6]
-		one.append(title)
-		one.append(rating)
-		list.append(one)
+		rating = total[i][14]
 	# print(list)
 total_number=len(total)
 # total_number = len(total) # the total number of movies
@@ -29,7 +25,7 @@ class Movie:
 	def __init__(self):
 		random_movie=random.choice(total)
 		self.title= random_movie[0]
-		self.rating= random_movie[6]
+		self.rating= random_movie[14]
 	def __str__(self):
 		return '{} | {}'.format(self.title, self.rating)
 
