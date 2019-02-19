@@ -1,6 +1,6 @@
 from flask import Flask
 from movies_tools import *
-#my goal is to create 2 routes in this flask app. In one of the routes, it will show the total number of the movies in the movies_clean.csv. In another route, it will print out 5 random movies and their ratings accordingly.
+#my goal is to create 2 routes in this flask app. In one of the routes, it will show the total number of the movies in the movies_clean.csv. In another route, it will randomly print out 5 movies and their ratings accordingly.
 
 app = Flask(__name__)
 
